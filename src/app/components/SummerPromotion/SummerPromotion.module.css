@@ -1,0 +1,105 @@
+/* set style for container */
+.slideContainer {
+    position: relative;
+    margin: 30px 50px;
+    transition: background-color 0.3s ease;
+}
+
+.slideContainer img{
+    width: 100%;
+}
+
+/* style and align the text */
+.bannerText {
+    cursor: default;
+    width: fit-content;
+    text-align: left;
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    font-size: 18.37px;
+    font-weight: 400;
+    line-height: 26.91px;
+    text-align: left;
+    color: white;
+    margin-top: 5px;
+}
+
+
+.bannerText button {
+    padding: 6px 20px;
+    border-radius: 20px;
+    background: #009046;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+/* style for slides */
+.active{
+    display: block;
+}
+
+.inactive{
+    display: none;
+}
+
+/* button indicator position */
+.indicator{
+    position: absolute;
+    display: flex;
+    gap: 8px;
+    bottom: 15%;
+    left: 48%;
+    transition: background-color 0.3s ease;
+}
+
+.indicator button{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+
+}
+
+/* active and inactive styles for button */
+.activeIndicator{
+    background-color: white;
+}
+
+.inactiveIndicator{
+    background-color: rgb(175, 175, 175);
+}
+
+
+@media screen and (min-width: 300px) and (max-width:900px){
+    .slideContainer{
+        margin: 0px;
+
+    }
+
+    #bannerImg{
+        height: auto;
+        object-fit: cover;
+        min-height: 217px;
+        width: 100%;
+    }
+
+    .bannerText {
+        justify-content: center;
+        align-items: center;
+        font-size: 9.8px;
+        font-weight: 400;
+        line-height: 14.35px;
+        left: 30%;
+        top: 52%;
+    }
+
+    .bannerText button {
+        padding: 3px 10px;
+    }
+
+    .indicator{
+        bottom: 12%;
+        left: 39%;
+    }
+}

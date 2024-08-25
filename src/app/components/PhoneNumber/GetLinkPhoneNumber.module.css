@@ -1,0 +1,24 @@
+.getLinkButton {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.subscribePhoneInputMV {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    padding: 0 13.7px;
+    border: none;
+    background-color: #F8F8F8;
+    margin-bottom: 16px;
+}
+
+.error {
+    color: rgb(255, 255, 255); /* Changed to red for better visibility */
+    margin: 0;
+    font-size: 12px;
+}
